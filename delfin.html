@@ -1,0 +1,56 @@
+<!doctype html>
+	<html lang="hu">
+		<head>
+			<script language="javascript">
+				function funkcio()
+				{	
+					if(document.getElementById("helyes").checked==false)
+					{
+						alert("Most nem talált! Probalkozz ujra!");
+					}
+					else
+					{
+						alert("Helyes Válasz!");
+						document.getElementById("iskola").style.visibility="visible";
+					}
+				}
+			</script>
+			<meta charset="utf-8">
+			<title>Delfinek</title>
+			<link href="style.css" rel="stylesheet">
+		</head>
+		<body>
+			<div id="keret">
+				<h1>Delfinek</h1>
+				<div id="bevezeto">
+					<img src="delfin1.jpg" id="kep">
+					<p>A delfin a fogascetek közé tartozó egyes vízi emlősállatok összefoglaló neve. A delfinek halakkal táplálkoznak. Különleges képességük, hogy a visszhang alapján tájékozódnak.</p>
+				</div>
+				<h2>Fajai</h2>
+					<p>Összesen 50 fajuk hét családot alkot: a tengerekben élő delfineket három családba soroljuk az édesvízi folyamidelfinek öregcsaládjába pedig további négy delfincsalád tartozik. A delfinek legközelebbi rokonai a szintén a fogascetek közé tartozó nagy ámbráscet, és csőröscetfélék.</p>
+					
+				<h2>Életmódja</h2>
+					<p>Kb. 30-40 egyedből álló csoportokban élnek, ezeket iskoláknak nevezik. A tagok jól ismerik egymást, és közösen, jól összehangoltan vadásznak. A delfin nagy frekvenciájú hangjai számunkra ugyan nem érzékelhetők, de mégis nagy erejűek. Olyannyira, hogy a zsákmányállatokat olykor meg is bénítják, ezzel is megkönnyítve megszerzésüket.
+
+Társas lények, szívesen játszanak az emberrel is, ezért a legkedveltebb állatok közé tartoznak. Ugyanakkor ragadozók, és egymás közti érintkezéseikből sem hiányzik az agresszió, sőt a gyilkosság. Ritkán fordul elő, hogy az embert is megtámadják.
+
+Értelmi képességei kiemelkedőek: gyakran hasonlítják őket a csimpánzokhoz, sőt az emberhez is.</p>
+				
+					<img src="delfin2.jpg" class="kepek" id="delfin2" title="delfin" alt="delfin">
+				<h2>Tudtad-e?</h2>
+					<p>Hogyan nevezik a delfin csoportokat?</p>
+					
+					<form>
+						<input type="radio" name="cucc">
+							<label>Osztály</label></br>
+						<input type="radio" name="cucc">
+							<label>Csorda</label></br>
+						<input type="radio" name="cucc">
+							<label>Nyáj</label></br>
+						<input type="radio" name="cucc" id="helyes">
+							<label>Iskola</label></br>
+						<input type="button" value="Tippelek" onClick="funkcio()">
+					</form>
+			</div>
+		</body>
+	</html>
